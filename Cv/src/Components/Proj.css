@@ -6,7 +6,7 @@
   grid-template-rows: repeat(4, 100px);
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  margin: 0em 15em;
+  margin: 0em 13em;
   padding: 2em;
         background:url(https://www.w3schools.com/images/background_in_space.gif) ;
 }
@@ -75,7 +75,13 @@ color: #ffffff;
     justify-content: center;
     align-items: center;
     gap: 1.5em;
+    /* overflow: hidden; */
   }
+
+  .card{
+    overflow: hidden;
+  }
+
 }
 
 .pr {

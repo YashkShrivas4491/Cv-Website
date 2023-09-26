@@ -45,5 +45,13 @@ ul{
 
 .experience{
   background: url(https://www.w3schools.com/images/background_in_space.gif);
- 
+  
+}
+
+@media screen and (max-width: 1024px) {
+
+  ul{
+    gap:4em;
+  }
+
 }
