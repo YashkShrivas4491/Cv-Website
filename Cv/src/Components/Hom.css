@@ -1,0 +1,141 @@
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+       background:url(https://www.w3schools.com/images/background_in_space.gif) ;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left p{
+
+width: 30vw;
+font-weight: 500;
+font-size: large;
+margin-bottom: 1.8em;
+
+}
+
+
+.right img{
+
+margin-top:3em;
+
+}
+
+.left .btn {
+  border: none;
+  width: 15em;
+  height: 5em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1C1A1C;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: small;
+    letter-spacing: 2px;
+}
+
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: white;
+  font-size: 1em;
+}
+
+.left .btn:hover {
+  background: linear-gradient(0deg,#A47CF3,#683FEA);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+  0px 0px 180px 0px #9917FF;
+  transform: translateY(-2px);
+}
+
+.left .btn:hover .text {
+  color: white;
+}
+
+.left .btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+} 
+
+.icn{
+display: flex;  
+font-size: 2em;
+margin-top: 1.5em;
+gap: 1.5em;
+}
+
+
+
+.container img{
+      animation: floatAnimation 3s infinite;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.left p{
+    background-image: linear-gradient(43deg, #4158d0, #c850c0 46%, #ffcc70 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left p{
+
+  text-align: center;
+
+  }
+
+  .right img{
+ 
+    width: 20em;
+    height: 16em; 
+
+  }
+
+}

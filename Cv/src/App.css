@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&family=Rubik:wght@500&display=swap');
+/* 
+body {
+  background-image: url('assets/bg.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+} */
+body{
+     font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    /* background-color: rgb(44, 42, 42); */
+}
+
+
+.nv{
+    color: whitesmoke;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+       background:url(https://www.w3schools.com/images/background_in_space.gif) ;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 5em;
+    cursor: pointer;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.load{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin: 18em 10em;
+}
+
+.experience{
+  background: url(https://www.w3schools.com/images/background_in_space.gif);
+ 
+}

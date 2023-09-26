@@ -1,0 +1,157 @@
+.fm{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 7rem;
+    overflow: hidden;
+    width: 98vw;
+    height: 100vh;
+    background-color: rgb(44, 42, 42);
+}
+
+.left{
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+    
+}
+
+.fm img{
+    width: 40vw;
+    height: 80vh;
+}
+
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Basic styling for the form container */
+.form {
+  width: 300px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for form labels */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style for input and textarea elements */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Style for input focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+/* Style for the submit button */
+/* button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Style for the submit button on hover */
+.right button[type="submit"]:hover {
+  background-color: #0056b3;
+} */
+
+/* Center-align the button */
+center {
+  text-align: center;
+}
+
+
+.right button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 8vw;
+}
+
+.right button svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.right button:hover svg {
+  transform: translateY(5px) rotate(360deg);
+}
+
+.right button:hover span {
+  transform: translateY(7px);
+}
+
+@media screen and (max-width: 1024px) {
+
+ .fm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+ }
+
+ .left{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+ }
+
+ .left img{
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+  overflow: hidden;
+ }
+ 
+ .right button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+}
+
+
