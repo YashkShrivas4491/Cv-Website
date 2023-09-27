@@ -82,6 +82,8 @@ color: #ffffff;
   .card{
     overflow: hidden;
     object-fit: cover;
+    margin-right: 2em;
+
   }
 
 }
