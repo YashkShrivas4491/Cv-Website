@@ -5,12 +5,24 @@ import { Typewriter } from "react-simple-typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMedium, faGithub, faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import Contact from './Contact';
+import Label from './Label';
+import {
+  useWindowSize
+} from "@react-hook/window-size";
+import Confetti from "react-confetti";
 
 
 
 const Home = () => {
   
-
+    const { width, height } = useWindowSize();
+  const labels = [
+ 
+  //  { name: "Bug", color: "e11d21" },
+  //  { name: "Feature", color: "84b6eb" },
+   { name: "Still Experimenting", color: "84b6eb" },
+   // Add more labels as needed
+ ];
 
   const handleDone = () => {
     console.log(`Done after 5 loops!`)
@@ -27,6 +39,9 @@ const Home = () => {
 
   return (
     <div className="container">
+      <Confetti width={width} height={height} 
+        recycle={false}
+      />
       <div className="left">
         <h2
           style={{
@@ -36,11 +51,11 @@ const Home = () => {
             color: "white",
           }}
         >
-          Life is simple{" "}
+          Life is all about{" "}
           <span style={{ color: "orange", fontWeight: "bold" }}>
             {/* Style will be inherited from the parent element */}
             <Typewriter
-              words={["Eat", "Sleep", "Code", "Repeat!"]}
+              words={["Eat 🚀", "Hustle ⚡", "Code 👨‍💻", "Sleep 🥳", "Repeat!🔗"]}
               loop={5}
               cursor
               cursorStyle="|"
@@ -51,14 +66,24 @@ const Home = () => {
             />
           </span>
         </h2>
-        <p className='des'>
+        <p className="des">
           Im a dedicated software developer with a passion for creating
           cutting-edge applications. My expertise lies in transforming ideas
           into practical solutions, always striving for clean code and
           exceptional user experiences. Lets collaborate to bring your software
           vision to life.
         </p>
-        <p className='stack'>Tech Stack : C++ 💖, Git , HTML5 , CSS3 , JS 👨‍💻 , React ❄️ , MySQL , OOPS , OpenSource⚡</p>
+
+        <div className="labelDiv">
+          {labels.map((label, index) => (
+            <Label key={index} name={label.name} color={label.color} />
+          ))}
+        </div>
+
+        <p className="stack">
+          Tech Stack : C++ 💖, Git , HTML5 , CSS3 , JS 👨‍💻 , React ❄️ , MySQL ,
+          OOPS , OpenSource⚡
+        </p>
         <button className="btn" onClick={onHandleClick}>
           Resume
         </button>

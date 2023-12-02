@@ -11,6 +11,16 @@
     align-items: center;
 }
 
+.label {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
 .right{
     display: flex;
     justify-content: center;
@@ -137,5 +147,17 @@ gap: 1.5em;
     height: 16em; 
 
   }
+
+}
+
+.label{
+  color: #1C1A1C;
+
+}
+
+.labelDiv{
+
+  display: flex;
+  margin-right:18em;
 
 }
