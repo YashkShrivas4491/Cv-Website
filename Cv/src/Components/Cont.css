@@ -81,7 +81,7 @@ textarea:focus {
 }
 
 /* Style for the submit button on hover */
-.right button[type="submit"]:hover {
+.st[type="submit"]:hover {
   background-color: #0056b3;
 } */
 
@@ -91,7 +91,7 @@ center {
 }
 
 
-.right button {
+.st {
   display: flex;
   align-items: center;
   font-family: inherit;
@@ -106,19 +106,20 @@ center {
   border-radius: 16px;
   cursor: pointer;
   width: 8vw;
+
 }
 
-.right button svg {
+.st svg {
   margin-right: 3px;
   transform: rotate(30deg);
   transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-.right button:hover svg {
+.st:hover svg {
   transform: translateY(5px) rotate(360deg);
 }
 
-.right button:hover span {
+.st:hover span {
   transform: translateY(7px);
 }
 
@@ -144,7 +145,7 @@ center {
   overflow: hidden;
  }
  
- .right button{
+ .st{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -154,4 +155,18 @@ center {
 
 }
 
+
+
+.td button{
+cursor: pointer;
+background-color: cornsilk;
+text-align: center;
+font-size: medium;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 600;
+border-radius: 0.5rem;
+margin-top: 35rem;
+margin-right: 1em;
+opacity: 1;
+}
 

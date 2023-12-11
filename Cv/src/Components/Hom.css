@@ -152,12 +152,17 @@ gap: 1.5em;
 
 .label{
   color: #1C1A1C;
-
+  
 }
 
-.labelDiv{
 
-  display: flex;
-  margin-right:18em;
 
+@media screen and (max-width: 1024px) {
+
+  .labelDiv{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
