@@ -1,11 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&family=Rubik:wght@500&display=swap'); */
-/* 
-body {
-  background-image: url('assets/bg.jpg'); 
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-} */
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap');
+
 body{
     font-family: Martian Mono;
    /* background:url(https://www.w3schools.com/images/background_in_space.gif) ; */
