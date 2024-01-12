@@ -1,12 +1,12 @@
 import './Cont.css';
-import message from '../assets/message.png'
+import bot from '../assets/bot.png'
 import { useForm } from "@formcarry/react";
   import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocketchat } from '@fortawesome/free-brands-svg-icons';
 import { faUps } from '@fortawesome/free-brands-svg-icons';
-
+import { FaLongArrowAltUp } from "react-icons/fa";
 
 const Contact = () => {
 
@@ -33,7 +33,7 @@ const Contact = () => {
           >
             Contact me ⚡
           </h1>
-          <img src={message} alt="img" />
+          <img src={bot} alt="img" />
         </div>
         <div className="right">
           <form className="form" onSubmit={submit}>
@@ -56,7 +56,8 @@ const Contact = () => {
           </form>
           <div className="td">
             <button onClick={top}>
-              Top <FontAwesomeIcon icon={ faUps} />
+              <FaLongArrowAltUp
+              />
             </button>
           </div>
         </div>

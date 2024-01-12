@@ -48,9 +48,7 @@ const Project = () => {
   ));
 
   return (
-    <div
-    style={{ background:"url(https://www.w3schools.com/images/background_in_space.gif)"}}
-    >
+    <div>
       {" "}
       <div className="cards">{dataElements}</div>
     </div>
