@@ -1,31 +1,27 @@
-.fm{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-top: 7rem;
-    overflow: hidden;
-    width: 98vw;
-    height: 100vh;
- 
+.fm {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 7rem;
+  overflow: hidden;
+  width: 98vw;
+  height: 100vh;
 }
 
-.left{
-
- display: flex;
- justify-content: center;
- align-items: center;
-    
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.fm img{
-    width: 35vw;
-    height: 70vh;
+.fm img {
+  width: 35vw;
+  height: 70vh;
 }
 
-
-.right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Basic styling for the form container */
@@ -83,13 +79,13 @@ textarea:focus {
 /* Style for the submit button on hover */
 .st[type="submit"]:hover {
   background-color: #0056b3;
-} */
+}
+*/
 
 /* Center-align the button */
 center {
   text-align: center;
 }
-
 
 .st {
   display: flex;
@@ -106,7 +102,6 @@ center {
   border-radius: 16px;
   cursor: pointer;
   width: 8vw;
-
 }
 
 .st svg {
@@ -124,45 +119,43 @@ center {
 }
 
 @media screen and (max-width: 1024px) {
+  .fm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
 
- .fm{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
- }
+  .left {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
 
- .left{
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
- }
+  .left img {
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+    overflow: hidden;
+  }
 
- .left img{
-  height: 80%;
-  width: 80%;
-  object-fit: cover;
-  overflow: hidden;
- }
- 
- .st{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
+  .st {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-
+  .form {
+    margin-right: 1em;
+  }
 }
 
+.td button {
+  cursor: pointer;
 
-
-.td button{
-cursor: pointer;
-
-font-weight: 600;
-margin-top: 35rem;
-margin-right: 1em;
-opacity: 1;
+  font-weight: 600;
+  margin-top: 35rem;
+  margin-right: 1em;
+  opacity: 1;
 }
-
