@@ -16,29 +16,32 @@ import Skills from './Skills';
 
 
 
+
+
 const Home = () => {
-  
-    const { width, height } = useWindowSize();
+
+
+  const { width, height } = useWindowSize();
   const labels = [
- 
-  //  { name: "Bug", color: "e11d21" },
-  //  { name: "Feature", color: "84b6eb" },
-   { name: "Still Experimenting", color: "84b6eb" },
-   // Add more labels as needed
- ];
+    //  { name: "Bug", color: "e11d21" },
+    //  { name: "Feature", color: "84b6eb" },
+    { name: "Still Experimenting", color: "84b6eb" },
+    // Add more labels as needed
+  ];
 
   const handleDone = () => {
-    console.log(`Done after 5 loops!`)
-  }
+    console.log(`Done after 5 loops!`);
+  };
 
   const onHandleClick = () => {
-         window.location.href =
-           "https://drive.google.com/file/d/1za6k8lkOpGcCq7TYoZxo54YgRT9cZgdQ/view?usp=sharing";
-  }
+    window.location.href =
+      "https://drive.google.com/file/d/1za6k8lkOpGcCq7TYoZxo54YgRT9cZgdQ/view?usp=sharing";
+  };
   const githubUrl = "https://github.com/YashkShrivas4491";
-  const linkedInUrl = "https://www.linkedin.com/in/yash-kumar-shrivas-98a759126/";
+  const linkedInUrl =
+    "https://www.linkedin.com/in/yash-kumar-shrivas-98a759126/";
   const twitterUrl = "https://twitter.com/YashKumarS4491";
-  const mediumUrl = "https://medium.com/@yashkshrivas1234"; 
+  const mediumUrl = "https://medium.com/@yashkshrivas1234";
 
   return (
     <>
@@ -54,7 +57,7 @@ const Home = () => {
             }}
           >
             Life is all about{" "}
-            <span style={{ color: "orange", fontWeight: "bold" }}>
+            <span style={{ color: "#CAEDFF", fontWeight: "bold" }}>
               {/* Style will be inherited from the parent element */}
               <Typewriter
                 words={[
@@ -62,7 +65,7 @@ const Home = () => {
                   "Hustle ⚡",
                   "Code 👨‍💻",
                   "Sleep 🥳",
-                  "Repeat!🔗",
+                  "Repeat",
                 ]}
                 loop={5}
                 cursor
@@ -75,7 +78,9 @@ const Home = () => {
             </span>
           </h4>
 
-          <h1>Frontend Developer</h1>
+          <h1>
+            Frontend <span className="highlight">Developer</span>
+          </h1>
 
           <div className="labelDiv">
             {labels.map((label, index) => (

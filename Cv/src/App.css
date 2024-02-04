@@ -6,6 +6,8 @@ body{
     background-color: #212121;
     margin: 0;
     padding: 0;
+
+
 }
 
 
@@ -47,7 +49,7 @@ ul{
 @media screen and (max-width: 1024px) {
 
   ul{
-    gap:3em;
+    gap:2.5em;
     overflow: hidden;
   }
 

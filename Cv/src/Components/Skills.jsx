@@ -43,7 +43,16 @@ const Skills = () => {
   return (
     <div className="box">
       <div className="rt">
-        <h1>Tech Stack 💻</h1>
+        <h1>
+          Tech{" "}
+          <span
+            style={{
+              color: "yellow",
+            }}
+          >
+            Stack 💻
+          </span>
+        </h1>
       </div>
       <div className="skills">
         {data.map((item, index) => (

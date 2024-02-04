@@ -21,6 +21,7 @@
   border-bottom-left-radius: 20px;
   outline-style: dotted;
   outline-color:rgb(252, 206, 0);
+ cursor: pointer;
 }
 
 .card h4 {
@@ -36,9 +37,10 @@
   width: 20em;
   font-size: small;
   text-align: center;
-    background-image: linear-gradient(43deg, #4158d0, #c850c0 46%, #ffcc70 100%);
+    /* background-image: linear-gradient(43deg, #4158d0, #c850c0 46%, #ffcc70 100%);
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent; */
+  color: mistyrose;
 
 }
 
@@ -65,6 +67,11 @@ background-color: rgb(8, 102, 179);
 color: #ffffff;
 }
 
+ .card:hover{
+
+ transform: scale(1.1);
+ }
+
 
 
 @media screen and (max-width: 1024px) {
@@ -81,7 +88,7 @@ color: #ffffff;
   .card{
     overflow: hidden;
     object-fit: cover;
-    margin-right: 3em;
+    margin-right: 3em; 
 
   }
 

@@ -31,7 +31,7 @@ const Contact = () => {
               color: "white",
             }}
           >
-            Contact me ⚡
+            Contact 📬
           </h1>
           <img src={bot} alt="img" />
         </div>
