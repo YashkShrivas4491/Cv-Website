@@ -1,29 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap");
 
-body{
-    font-family: Martian Mono;
-   /* background:url(https://www.w3schools.com/images/background_in_space.gif) ; */
-    background-color: #212121;
-    margin: 0;
-    padding: 0;
-
-
+body {
+  font-family: Martian Mono;
+  /* background:url(https://www.w3schools.com/images/background_in_space.gif) ; */
+  background-color: #212121;
+  margin: 0;
+  padding: 0;
 }
 
-
-.nv{
-    color: whitesmoke;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-       /* background:url(https://www.w3schools.com/images/background_in_space.gif) ; */
+.nv {
+  color: whitesmoke;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* background:url(https://www.w3schools.com/images/background_in_space.gif) ; */
 }
 
-ul{
-    display: flex;
-    list-style: none;
-    gap: 5em;
-    cursor: pointer;
+ul {
+  display: flex;
+  list-style: none;
+  gap: 5em;
+  cursor: pointer;
 }
 
 .nav-link {
@@ -33,28 +30,22 @@ ul{
 
 
 
-/* .load{
+.loader {
   display: flex;
   justify-content: center;
   align-items: center;
-    margin: 18em 10em;
-    color: aliceblue;
-} */
+  margin-top: 1em;
+}
 
-/* .experience{
-  background: url(https://www.w3schools.com/images/background_in_space.gif);
-  
-} */
+
 
 @media screen and (max-width: 1024px) {
-
-  ul{
-    gap:2.5em;
+  ul {
+    gap: 2.5em;
     overflow: hidden;
   }
 
-  .nv{
+  .nv {
     overflow: hidden;
   }
-
 }
