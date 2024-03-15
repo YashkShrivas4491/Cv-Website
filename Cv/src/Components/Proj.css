@@ -1,4 +1,3 @@
-
 .cards {
   display: grid;
   column-gap: 3em;
@@ -17,11 +16,9 @@
   background: rgb(11, 10, 10);
   border-radius: 3em;
   transition: 1s ease-in-out;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  outline-style: dotted;
-  outline-color:rgb(252, 206, 0);
- cursor: pointer;
+  /* border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px; */
+  cursor: pointer;
 }
 
 .card h4 {
@@ -29,19 +26,18 @@
   color: white;
   text-align: center;
   font-size: 1em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
- .card .info {
+.card .info {
   color: #ffffff;
   width: 20em;
   font-size: small;
   text-align: center;
-    /* background-image: linear-gradient(43deg, #4158d0, #c850c0 46%, #ffcc70 100%);
+  /* background-image: linear-gradient(43deg, #4158d0, #c850c0 46%, #ffcc70 100%);
   -webkit-background-clip: text;
   color: transparent; */
   color: mistyrose;
-
 }
 
 .card img {
@@ -49,30 +45,27 @@
   height: 25vh;
   border-radius: 0.9em;
   background: white;
- 
 }
 
-.bt{
-display: flex;
-justify-content: center;
-align-items: center;
+.bt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bt .card-btn{
-cursor: pointer;
-padding: 0.5em;
-border-radius: 1em;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-background-color: rgb(8, 102, 179);
-color: #ffffff;
+.bt .card-btn {
+  cursor: pointer;
+  padding: 0.5em;
+  border-radius: 1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(8, 102, 179);
+  color: #ffffff;
 }
 
- .card:hover{
-
- transform: scale(1.1);
- }
-
-
+.card:hover {
+  transform: scale(1.1);
+}
 
 @media screen and (max-width: 1024px) {
   .cards {
@@ -82,16 +75,11 @@ color: #ffffff;
     align-items: center;
     gap: 1em;
     object-fit: cover;
-   
   }
 
-  .card{
+  .card {
     overflow: hidden;
     object-fit: cover;
-    margin-right: 3em; 
-
+    margin-right: 3em;
   }
-
 }
-
-

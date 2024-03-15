@@ -3,66 +3,51 @@ h1 {
   color: azure;
 }
 
-
 /* SkillsSection.css */
 
-.skills{
-display: grid;
-grid-template-rows:    repeat(4, 100px);
-grid-template-columns: repeat(2, 1fr);
-gap: 2em;
-margin-top: 10em;
+.skills {
+  display: grid;
+  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  margin-top: 10em;
 }
 
-
 img {
-  
   /* mix-blend-mode: multiply; */
   width: 5em; /* Adjust the size as needed */
   height: 5em; /* Adjust the size as needed */
-  
+  border-radius: 20px;
 }
 
-.box{
-
-display: grid;
-grid-template-columns: 50% 50%;
-
+.box {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.rt{
- display: flex;
- justify-content: center;
- align-items: center;
- 
+.rt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 @media screen and (max-width: 1024px) {
+  .rt {
+    margin-top: 5em;
+  }
 
-  
-    .rt{
-
-        margin-top: 5em;
-    }
-  
-     .box{
-
+  .box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-   
-  .skills{
 
-display: grid;
-grid-template-columns: 100% 50%;
-column-gap:4em;
-margin-right: 8em;
-margin-bottom: 3em;
+  .skills {
+    display: grid;
+    grid-template-columns: 100% 50%;
+    column-gap: 4em;
+    margin-right: 8em;
+    margin-bottom: 3em;
   }
-
-
 }
